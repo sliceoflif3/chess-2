@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2349596101705332485}
   - component: {fileID: 2349596101705332490}
   - component: {fileID: 2349596101705332489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy 4 -bishop
   m_TagString: Enemy
   m_Icon: {fileID: 0}
