@@ -88,6 +88,11 @@ public class EnemyController : MonoBehaviour
             {
                 CoinController.instance.dropCoin(transform.position, coinValue);
             }
+
+            SFXManager.instance.PlaySFXPitched(1);
+        } else
+        {
+            SFXManager.instance.PlaySFXPitched(2);
         }
 
         DamageNumberController.instance.SpawnDamage(damageToTake, transform.position);

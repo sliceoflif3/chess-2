@@ -20,6 +20,8 @@ public class CoinController : MonoBehaviour
         currentCoins += coinsToAdd;
 
         UIController.instance.updateCoin();
+
+        SFXManager.instance.PlaySFXPitched(3);
     }
 
     public void dropCoin(Vector3 position, int value)

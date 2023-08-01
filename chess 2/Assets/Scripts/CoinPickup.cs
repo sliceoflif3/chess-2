@@ -47,7 +47,7 @@ public class CoinPickup : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            CoinController.instance.addCoins(coinAmount);
+            CoinController.instance.addCoins(coinAmount); 
 
             Destroy(gameObject);
         }

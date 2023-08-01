@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class CloseAttackWeapons : Weapon
 {
@@ -52,6 +51,8 @@ public class CloseAttackWeapons : Weapon
 
                 Instantiate(damager, damager.transform.position, Quaternion.Euler(0f, 0f, damager.transform.rotation.eulerAngles.z + rot), transform).gameObject.SetActive(true);
             }
+
+            SFXManager.instance.PlaySFXPitched(6);
         }
     }
 
