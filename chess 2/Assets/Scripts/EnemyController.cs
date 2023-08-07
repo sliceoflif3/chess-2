@@ -35,18 +35,20 @@ public class EnemyController : MonoBehaviour
     {
         if(PlayerController.instance.gameObject.activeSelf)
         {
+
             if (knockBackCounter > 0)
             {
+                
                 knockBackCounter -= Time.deltaTime;
 
                 if (moveSpeed > 0)
                 {
-                    moveSpeed = -moveSpeed * 3f;
+                    moveSpeed = -moveSpeed * 2f;
                 }
 
                 if (knockBackCounter <= 0)
                 {
-                    moveSpeed = Mathf.Abs(moveSpeed * .5f);
+                    moveSpeed = Mathf.Abs(moveSpeed * 0.5f);
                 }
             }
 

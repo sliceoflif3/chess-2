@@ -84,37 +84,37 @@ public class PlayerStatController : MonoBehaviour
     {
         moveSpeedLevel++;
         CoinController.instance.spendCoins(moveSpeed[moveSpeedLevel].cost);
-        UpdateDipslay();
 
         PlayerController.instance.moveSpeed = moveSpeed[moveSpeedLevel].value;
+        UpdateDipslay();
     }
 
     public void PurchaseHealth()
     {
         healthLevel++;
         CoinController.instance.spendCoins(health[healthLevel].cost);
-        UpdateDipslay();
 
         PlayerHealthController.instance.maxHealth = health[healthLevel].value;
-        PlayerHealthController.instance.currentHealth += health[healthLevel].value - health[healthLevel - 1].value;
+        PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
+        UpdateDipslay();
     }
 
     public void PurchasePickupRange()
     {
         pickupRangeLevel++;
         CoinController.instance.spendCoins(pickupRange[pickupRangeLevel].cost);
-        UpdateDipslay();
 
         PlayerController.instance.pickupRange = pickupRange[pickupRangeLevel].value;
+        UpdateDipslay();
     }
 
     public void PurchaseMaxWeapon()
     {
         maxWeaponLevel++;
         CoinController.instance.spendCoins(maxWeapon[maxWeaponLevel].cost);
-        UpdateDipslay();
 
         PlayerController.instance.maxWeapons = Mathf.RoundToInt(maxWeapon[maxWeaponLevel].value);
+        UpdateDipslay();
     }
 }
 

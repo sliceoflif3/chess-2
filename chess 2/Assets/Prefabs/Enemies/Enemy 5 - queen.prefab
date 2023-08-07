@@ -86,12 +86,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 1779833569633358409}
-  moveSpeed: 2
-  damage: 20
+  moveSpeed: 5
+  damage: 25
   hitWaitTime: 1
-  health: 25
+  health: 27
   knockBackTime: 0.5
   expToGive: 5
+  coinValue: 3
+  coinDropRate: 0.3
 --- !u!114 &1779833569633358405
 MonoBehaviour:
   m_ObjectHideFlags: 0
